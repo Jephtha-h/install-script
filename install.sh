@@ -18,17 +18,6 @@ echo "[1/12] Updating system..."
 sudo pacman -Syu --noconfirm
 
 # -------------------------------------------------------
-# 2. AUR HELPER (yay)
-# -------------------------------------------------------
-echo "[2/12] Installing yay (AUR helper)..."
-sudo pacman -S --noconfirm git base-devel
-cd /tmp
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
-cd ~
-
-# -------------------------------------------------------
 # 3. DISPLAY MANAGER (SDDM)
 # -------------------------------------------------------
 echo "[3/12] Installing SDDM..."
